@@ -238,15 +238,15 @@ call.callApi().then(function(res) {
                                 // SQL QUERIES //
         //*****************************************************************//
 
-        var sqlF = `INSERT INTO forwardArb (ada, bcc, bnb, eos, etc, eth, icx, iota, ltc, neo, ont, trx, tusd, vet, xlm, xrp)
+        var sqlF = `INSERT INTO forwardArb (ada, bcc, bnb, eos, etc, eth, icx, iota, ltc, neo, ont, trx, tusd, vet, xlm, xrp, timestamp)
                     VALUES ('${adaArbF}', '${adaArbF}', '${bccArbF}', '${bnbArbF}', '${eosArbF}', '${etcArbF}', '${ethArbF}',
                     '${icxArbF}', '${iotaArbF}', '${ltcArbF}', '${neoArbF}', '${ontArbF}', '${trxArbF}', '${tusdArbF}',
-                    '${xlmArbF}', '${xrpArbF}')`;
+                    '${xlmArbF}', '${xrpArbF}', '${time}')`;
 
-        var sqlB = `INSERT INTO backwardArb (ada, bcc, bnb, eos, etc, eth, icx, iota, ltc, neo, ont, trx, tusd, vet, xlm, xrp)
+        var sqlB = `INSERT INTO backwardArb (ada, bcc, bnb, eos, etc, eth, icx, iota, ltc, neo, ont, trx, tusd, vet, xlm, xrp, timestamp)
                     VALUES ('${adaArbB}', '${adaArbB}', '${bccArbB}', '${bnbArbB}', '${eosArbB}', '${etcArbB}', '${ethArbB}',
                     '${icxArbB}', '${iotaArbB}', '${ltcArbB}', '${neoArbB}', '${ontArbB}', '${trxArbB}', '${tusdArbB}',
-                    '${xlmArbB}', '${xrpArbB}')`;
+                    '${xlmArbB}', '${xrpArbB}', '${time}')`;
 
         con.query(sqlF, function (err, result) {
           if (err) throw err;
