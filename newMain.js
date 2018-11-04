@@ -243,7 +243,7 @@ call.callApi().then(function(res) {
                     '${icxArbF}', '${iotaArbF}', '${ltcArbF}', '${neoArbF}', '${ontArbF}', '${trxArbF}', '${tusdArbF}',
                     '${xlmArbF}', '${xrpArbF}')`;
 
-        var sqlF = `INSERT INTO backwardArb (ada, bcc, bnb, eos, etc, eth, icx, iota, ltc, neo, ont, trx, tusd, vet, xlm, xrp)
+        var sqlB = `INSERT INTO backwardArb (ada, bcc, bnb, eos, etc, eth, icx, iota, ltc, neo, ont, trx, tusd, vet, xlm, xrp)
                     VALUES ('${adaArbB}', '${adaArbB}', '${bccArbB}', '${bnbArbB}', '${eosArbB}', '${etcArbB}', '${ethArbB}',
                     '${icxArbB}', '${iotaArbB}', '${ltcArbB}', '${neoArbB}', '${ontArbB}', '${trxArbB}', '${tusdArbB}',
                     '${xlmArbB}', '${xrpArbB}')`;
