@@ -8,7 +8,7 @@ var con = mysql.createConnection({
   host: "localhost",
   user: "nicolas",
   password: "",
-  database: "arbWithin"
+  database: "arbWithinBinance"
 });
 
 var balance = 1000;
